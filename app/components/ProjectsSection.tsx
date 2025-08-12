@@ -1,41 +1,44 @@
 'use client';
 
+import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-const projects = [
+
+export default function ProjectsSection() {
+	const { t } = useTranslation();
+	const projects = [
 	{
 		title: 'Senna Kasir',
-		description: 'Cashier Apps for recording finances, sales transactions, purchases and employee attendance.',
+		description: t('d.senna'),
 		image: '/sennafix1.png',
 		tags: ['Laravel', 'Node.js', 'Bootstrap', 'Chart.js', 'PostgreSQL', 'Redis', 'GitLab'],
 	},
 	{
-		title: 'Labschool Cibubur (PSB Flow)',
-		description: 'Registration website for new elementary school students from initial registration, registration payments to tuition payments (Integration with BRI API).',
+		title: t('t.labs'),
+		description: t('d.labs'),
 		image: '/labscibubur.png',
 		tags: ['Codeigniter', 'Bootstrap', 'MySQL','jQuery', 'Github'],
 	},
 	{
 		title: 'SALLY',
-		description: 'Application for inputting and monitoring credit applications inputted by the sales team which will be processed to the next stage until funds are disbursed.',
+		description: t('d.sally'),
 		image: '/sally11.png',
 		tags: ['Echo', 'Bootstrap', 'PostgreSQL', 'Redis', 'Github', 'Jenkins'],
 	},
 	{
-		title: 'LOS (Return Document Funding Flow)',
-		description: 'CMS web feature for the process of recording the return of funding documents.',
+		title: t('t.los'),
+		description: t('d.los'),
 		image: '/loss.png',
 		tags: ['Codeigniter', 'Bootstrap', 'MySQLServer', 'jQuery', 'Github', 'Jenkins'],
 	},
 ];
 
-export default function ProjectsSection() {
 	return (
 		<section className="py-20 px-4">
 			<div className="max-w-6xl mx-auto">
 				<motion.h2 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="text-3xl font-bold mb-12 text-center">
-					My Projects
+					{t('t.project')}
 				</motion.h2>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8">

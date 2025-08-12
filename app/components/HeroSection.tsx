@@ -1,8 +1,10 @@
 'use client';
-
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
 export default function HeroSection() {
+	const { t } = useTranslation();
+
 	return (
 		<section className="relative min-h-screen flex items-center justify-center overflow-hidden">
 			<div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-10" />
@@ -14,10 +16,10 @@ export default function HeroSection() {
 				<motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
 					<h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">Deni Akbar</h1>
 					<p className="text-xl md:text-2xl text-gray-300 mb-8 font-bold">Full Stack Developer</p>
-					<p className='mb-2'>Welcome to my portfolio! </p>
-					<p className='mb-2'>I am a passionate full stack developer specializing in building robust, scalable, and user-centric web applications.</p>
-					<p className='mb-2'>With expertise in both frontend and backend technologies, including modern JavaScript frameworks and server-side development. </p>
-					<p className='mb-8'>I bridge design and functionality to deliver seamless, end-to-end interactive experiences.</p>
+					<p className='mb-2'>{t('welcome')} </p>
+					<p className='mb-2'>{t('desc1')}</p>
+					<p className='mb-2'>{t('desc2')}</p>
+					<p className='mb-8'>{t('desc3')}</p>
 					<div className="flex flex-wrap justify-center gap-4 text-sm">
 						<span className="px-4 py-2 bg-blue-500/10 rounded-full border border-blue-500/20">PHP</span>
 						<span className="px-4 py-2 bg-blue-500/10 rounded-full border border-blue-500/20">Javascript</span>

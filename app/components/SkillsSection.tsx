@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
 const skills = [
@@ -18,11 +19,12 @@ const skills = [
 ];
 
 export default function SkillsSection() {
+	const { t } = useTranslation();
 	return (
 		<section className="py-20 px-4 bg-gray-900/50">
 			<div className="max-w-4xl mx-auto">
 				<motion.h2 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="text-3xl font-bold mb-12 text-center">
-					Technical Skills
+					{t('t.skills')}
 				</motion.h2>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
