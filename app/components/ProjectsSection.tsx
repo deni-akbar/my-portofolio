@@ -21,7 +21,7 @@ export default function ProjectsSection() {
 		tags: ['Codeigniter', 'Bootstrap', 'MySQL','jQuery', 'Github'],
 	},
 	{
-		title: 'SALLY',
+		title: 'Sally',
 		description: t('d.sally'),
 		image: '/sally11.png',
 		tags: ['Echo', 'Bootstrap', 'PostgreSQL', 'Redis', 'Github', 'Jenkins'],
