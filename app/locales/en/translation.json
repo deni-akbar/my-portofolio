@@ -1,8 +1,8 @@
 {
-  "welcome": "Welcome to my portfolio",
-  "desc1": "I am a passionate full stack developer specializing in building robust, scalable, and user-centric web applications.",
-  "desc2": "With expertise in both frontend and backend technologies, I bridge design and functionality to build efficient and engaging web applications.",
-  "desc3": " I am also eager to learn new technology stacks whenever needed to continuously improve and adapt.",
+  "welcome": "Welcome to my Portfolio",
+  "desc1": "I am a passionate Full Stack Developer specializing in building robust, scalable, and user-centric web applications.",
+  "desc2": "With expertise in both Frontend and Backend technologies, I bridge design and functionality to build efficient and engaging web applications.",
+  "desc3": " I am also eager to learn new Technology Stacks whenever needed to continuously improve and adapt.",
   "t.project": "My Projects",
   "d.senna": "Cashier Apps for recording finances, sales transactions, purchases and employee attendance.",
   "d.labs": "Registration website for new elementary school students from initial registration, registration payments to tuition payments (Integration with BRI API).",
