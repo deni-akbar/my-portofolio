@@ -3,7 +3,6 @@
 import '../i18n.js';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
-import { ChevronDownIcon } from '@heroicons/react/24/solid';
 
 export default function ButtonSection() {
          const { i18n } = useTranslation();
