@@ -30,7 +30,7 @@ export default function ProjectsSection() {
 		title: t('t.los'),
 		description: t('d.los'),
 		image: '/loss.png',
-		tags: ['Codeigniter', 'Bootstrap', 'MySQLServer', 'jQuery', 'Github', 'Jenkins'],
+		tags: ['Codeigniter','Echo', 'Bootstrap', 'MySQLServer', 'jQuery', 'Github', 'Jenkins'],
 	},
 ];
 
