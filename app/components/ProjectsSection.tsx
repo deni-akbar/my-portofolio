@@ -12,7 +12,7 @@ export default function ProjectsSection() {
 		title: 'Senna Kasir',
 		description: t('d.senna'),
 		image: '/sennafix1.png',
-		tags: ['Laravel', 'Node.js', 'Bootstrap', 'Chart.js', 'PostgreSQL', 'Redis', 'GitLab'],
+		tags: ['Laravel', 'Node.js', 'Bootstrap', 'Highchart.js', 'PostgreSQL', 'Redis', 'GitLab'],
 	},
 	{
 		title: t('t.labs'),
@@ -24,7 +24,7 @@ export default function ProjectsSection() {
 		title: 'Sally',
 		description: t('d.sally'),
 		image: '/sally11.png',
-		tags: ['Echo', 'Bootstrap', 'PostgreSQL', 'Redis', 'Github', 'Jenkins'],
+		tags: ['Echo', 'Bootstrap','jQuery', 'Highchart.js', 'PostgreSQL', 'Redis', 'Github', 'Jenkins'],
 	},
 	{
 		title: t('t.los'),
@@ -57,7 +57,7 @@ export default function ProjectsSection() {
 							</div>
 							<div className="p-6">
 								<h3 className="text-xl font-bold mb-2">{project.title}</h3>
-								<p className="text-gray-400 mb-4">{project.description}</p>
+								<p className="text-gray-400 mb-4 text-justify">{project.description}</p>
 								<div className="flex flex-wrap gap-2">
 									{project.tags.map((tag, i) => (
 										<span key={i} className="text-sm px-3 py-1 bg-gray-800 rounded-full">
