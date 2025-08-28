@@ -53,7 +53,7 @@ export default function ContactSection() {
 								{t('b.email')}
 							</motion.a>
 							<motion.a
-								href="/resume.pdf"
+								href="/new-cv.pdf"
 								target="_blank"
 								whileHover={{ scale: 1.05 }}
 								whileTap={{ scale: 0.95 }}
